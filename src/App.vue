@@ -1,12 +1,12 @@
 <template>
-  <main></main>
+  <the-header></the-header>
+
+  <TheView></TheView>
 </template>
 
-<script>
-export default {
-  name: 'App',
-  components: {},
-};
+<script setup>
+import TheHeader from '@/layouts/TheHeader.vue';
+import TheView from '@/layouts/TheView.vue';
 </script>
 
 <style></style>
