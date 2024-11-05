@@ -73,7 +73,7 @@
 
 ## 📒 Vue3 완벽 마스터: 기초부터 실전까지 - "실전편" <br />
 ✏ 수강기간 : 2024.10.19 ~ <br />
-✏ URL : [https://inf.run/kCYMv](https://inf.run/HDbZ9) <br />
+✏ URL : https://inf.run/c2cur <br />
 
 <details>
   <summary><strong>Section 1. 강의소개</strong></summary>
