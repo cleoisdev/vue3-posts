@@ -11,6 +11,10 @@
         <label for="exampleFormControlTextarea1" class="form-label">내용</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
+      <div class="pt-4">
+        <button type="button" class="btn btn-outline-dark me-2">목록</button>
+        <button class="btn btn-primary">저장</button>
+      </div>
     </form>
   </div>
 </template>

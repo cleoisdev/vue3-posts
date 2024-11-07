@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2>게시글 상세</h2>
-    <p></p>
-    <p class="text-muted"></p>
+    <h2>{{ form.title }}</h2>
+    <p>{{ form.content }}</p>
+    <p class="text-muted">{{ form.createdAt }}</p>
     <hr class="my-4" />
     <div class="row g-2">
       <div class="col-auto">
@@ -28,9 +28,25 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
+import { getPostById } from '@/api/posts';
+import { ref } from 'vue';
+
+const props = defineProps({
+  id: String,
+});
 
 const router = useRouter();
+// const id = route.params.id;
+const form = ref({});
+
+const petchPost = () => {
+  const data = getPostById(props.id);
+  form.value = { ...data };
+};
+
+petchPost();
 const goListPage = () => router.push({ name: 'PostList' });
+const goEditPage = () => router.push({ name: 'postEdit', params: { id: props.id } });
 </script>
 
 <style lang="scss" scoped></style>
