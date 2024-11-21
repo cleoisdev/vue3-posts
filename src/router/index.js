@@ -34,14 +34,14 @@ const routes = [
   },
   {
     path: '/posts/:id',
-    name: 'postDetail',
+    name: 'PostDetail',
     component: PostDetailView,
     // props: true,
     props: route => ({ id: route.params.id }),
   },
   {
     path: '/posts/:id/edit',
-    name: 'postEdit',
+    name: 'PostEdit',
     component: PostEditView,
   },
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFoundView },
